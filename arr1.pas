@@ -9,15 +9,15 @@ var
         write('jumlah mahasiswa: ');
         readln(n);
         while (n < 1) or (n > 10) do
-        //input jumlah mahasiswa 
+        //input jumlah mahasiswa (1 - 10)
             begin
                 write('jumlah mahasiswa: ');
                 readln(n);
             end;
 
         for i := 1 to n do
-        begin
         //masukkan nilai mahasiswa ke-i
+        begin
             repeat
                 write('Nilai Mahasiswa ke-',i,': ');
                 readln(nilai[i]);
@@ -25,8 +25,9 @@ var
                 writeln('Nilai harus 0 - 100');
             until (nilai[i] >= 0) and (nilai[i] <= 100);
         end;
-        //mengurutkan nilai dari yang terkecil hingga terbesar
+
         for i := 1 to n - 1 do
+        //mengurutkan nilai dari yang terkecil hingga terbesar
             for j := 1 to n - i do
             if nilai[j] > nilai[j + 1] then
             begin
