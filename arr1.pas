@@ -17,7 +17,7 @@ var
 
         for i := 1 to n do
         begin
-        //masukkan nilaimahasiswa ke-i
+        //masukkan nilai mahasiswa ke-i
             repeat
                 write('Nilai Mahasiswa ke-',i,': ');
                 readln(nilai[i]);
