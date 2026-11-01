@@ -25,7 +25,7 @@ var
                 writeln('Nilai harus 0 - 100');
             until (nilai[i] >= 0) and (nilai[i] <= 100);
         end;
-
+        //mengurutkan nilai dari yang terkecil hingga terbesar
         for i := 1 to n - 1 do
             for j := 1 to n - i do
             if nilai[j] > nilai[j + 1] then
